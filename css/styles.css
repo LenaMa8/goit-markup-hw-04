@@ -6,6 +6,7 @@
     --accent-color: #2196F3;
     --background-color-dark: #2F303A;
     --background-color-light: #F5F4FA;
+    --icon-color: #afb1b8;
 }
 body{
     font-family: 'Roboto';
@@ -355,4 +356,86 @@ color: var(--primary-title-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
-  
+  /*SVG ICONS*/
+  .header-contacts-icon {
+    max-width: 16px;
+    max-height: 16px;
+  }
+  .team-member-icon-wrapper {
+    border-radius: 50%;
+    padding: 12px;
+  }
+  .team-member-icon-wrapper:hover {
+    background-color: var(--accent-color);
+    transition-duration: 400ms;
+  }
+  .team-member-icon-wrapper:hover svg {
+    fill: var(--secondary-title-color);
+  }
+  .features-card-image {
+    background-color: var(--background-color-light);
+    width: auto;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+  }
+  .headers {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--primary-title-color);
+    line-height: 42.19px;
+  }
+  .customer-list {
+    padding-top: 50px;
+    display: flex;
+    gap: 30px;
+  }
+  .customer-div {
+    padding: 16px 32px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    display: inline-block;
+  }
+  .customer-icon {
+    height: 60px;
+    width: 106px;
+    fill: var(--icon-color);
+  }
+  .customer-div:hover {
+    border-color: var(--accent-color);
+  }
+  .customer-div:hover svg {
+    fill: var(--accent-color);
+  }
+  /*FOOTER SVG ICONS*/
+  .findUs-container {
+    margin-left: 70px;
+  }
+  .findUs-text {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: calc(16/14);
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--secondary-title-color);
+  }
+  .footer-icons-list svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+  }
+  .footer-icons-list li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .footer-icon {
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+  }
+  .footer-icon:hover {
+    background-color: var(--accent-color);
+    transition-duration: 400ms;
+  }
